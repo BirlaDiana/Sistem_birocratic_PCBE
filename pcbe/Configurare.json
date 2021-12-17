@@ -1,0 +1,11 @@
+{
+	"NumarBirouri": 6,
+    "NumarGhisee" : [2, 2, 2, 3, 1, 2] ,
+	"documente": {
+		"Doc1":["Queue1","Queue2"],
+		"Doc2":["Queue1","Queue2"],
+		"Doc3":["Queue2","Queue1"],
+		"Doc4":["Queue1","Queue2","Queue3"],
+		"Doc5":["Queue3","Queue1","Queue5","Queue6"]
+	}
+}
