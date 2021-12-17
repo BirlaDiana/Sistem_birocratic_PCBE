@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. --><project basedir="." default="build" name="pcbe">
+    <property environment="env"/>
+    <property name="ECLIPSE_HOME" value="../../../eclipse/java-2021-09/eclipse/"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="11"/>
+    <property name="source" value="11"/>
+    <path id="pcbe.classpath">
+        <pathelement location="target/classes"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-javadoc.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-sources.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-tests.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-test-sources.jar"/>
+        <pathelement location="../../../Downloads/jar_files (1)/amqp-client-5.14.0.jar"/>
+        <pathelement location="../../../Downloads/jar_files (1)/slf4j-api-1.7.32.jar"/>
+        <pathelement location="../../../Downloads/rabbitmq-client.jar/rabbitmq-client.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/hamcrest-core-1.1.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/json-simple-1.1.1.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/junit-4.10.jar"/>
+        <pathelement location="../../../Downloads/jar_files_gjon/gson-2.8.2.jar"/>
+        <pathelement location="../../../Downloads/slf4j-simple-1.7.26.jar"/>
+        <pathelement location="../../../Downloads/slf4j-api-1.7.26.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.7.1.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.13.1.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.13.1-sources.jar"/>
+    </path>
+    <path id="run.Event (2).classpath">
+        <path refid="pcbe.classpath"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-javadoc.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-sources.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-tests.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-test-sources.jar"/>
+        <pathelement location="../../../Downloads/jar_files (1)/amqp-client-5.14.0.jar"/>
+        <pathelement location="../../../Downloads/jar_files (1)/slf4j-api-1.7.32.jar"/>
+        <pathelement location="../../../Downloads/rabbitmq-client.jar/rabbitmq-client.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/hamcrest-core-1.1.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/json-simple-1.1.1.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/junit-4.10.jar"/>
+        <pathelement location="../../../Downloads/jar_files_gjon/gson-2.8.2.jar"/>
+        <pathelement location="../../../Downloads/slf4j-simple-1.7.26.jar"/>
+        <pathelement location="../../../Downloads/slf4j-api-1.7.26.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.7.1.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.13.1.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.13.1-sources.jar"/>
+    </path>
+    <path id="run.MainApp (2).classpath">
+        <path refid="pcbe.classpath"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-javadoc.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-sources.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-tests.jar"/>
+        <pathelement location="../../../Downloads/commons-collections4-4.4-bin/commons-collections4-4.4/commons-collections4-4.4-test-sources.jar"/>
+        <pathelement location="../../../Downloads/jar_files (1)/amqp-client-5.14.0.jar"/>
+        <pathelement location="../../../Downloads/jar_files (1)/slf4j-api-1.7.32.jar"/>
+        <pathelement location="../../../Downloads/rabbitmq-client.jar/rabbitmq-client.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/hamcrest-core-1.1.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/json-simple-1.1.1.jar"/>
+        <pathelement location="../../../Downloads/jar_files (2)/junit-4.10.jar"/>
+        <pathelement location="../../../Downloads/jar_files_gjon/gson-2.8.2.jar"/>
+        <pathelement location="../../../Downloads/slf4j-simple-1.7.26.jar"/>
+        <pathelement location="../../../Downloads/slf4j-api-1.7.26.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.7.1.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.13.1.jar"/>
+        <pathelement location="../../../Downloads/amqp-client-5.13.1-sources.jar"/>
+    </path>
+    <target name="init">
+        <mkdir dir="target/classes"/>
+        <copy includeemptydirs="false" todir="target/classes">
+            <fileset dir="src">
+                <include name="**/*.java"/>
+                <exclude name="**/*.launch"/>
+                <exclude name="**/*.xtend"/>
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="target/classes"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="target/classes" includeantruntime="false" source="${source}" target="${target}">
+            <src path="src"/>
+            <include name="**/*.java"/>
+            <classpath refid="pcbe.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+    <target name="Event">
+        <java classname="client.Event" failonerror="true" fork="yes">
+        	<arg value="${arg1}"/>
+            <classpath refid="run.Event (2).classpath"/>
+        </java>
+    </target>
+    <target name="MainApp">
+        <java classname="main.MainApp" failonerror="true" fork="yes">
+        	<arg value="${arg1}"/>
+        	<arg value="${arg2}"/>
+        	<arg value="${arg3}"/>
+            <classpath refid="run.MainApp (2).classpath"/>
+        </java>
+    </target>
+</project>
